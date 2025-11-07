@@ -1,0 +1,11 @@
+Model Information:
+* title:	Birthday Candle
+* source:	https://sketchfab.com/3d-models/birthday-candle-71567160d88644ac8c150cfd4090b9a9
+* author:	koelooptiemanna (https://sketchfab.com/koelooptiemanna)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Birthday Candle" (https://sketchfab.com/3d-models/birthday-candle-71567160d88644ac8c150cfd4090b9a9) by koelooptiemanna (https://sketchfab.com/koelooptiemanna) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

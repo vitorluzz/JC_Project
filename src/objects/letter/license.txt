@@ -1,0 +1,11 @@
+Model Information:
+* title:	letter
+* source:	https://sketchfab.com/3d-models/letter-2ef05f6ca4a94b21a25241a92cbc3258
+* author:	Yuxun11 (https://sketchfab.com/aimerjk11)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "letter" (https://sketchfab.com/3d-models/letter-2ef05f6ca4a94b21a25241a92cbc3258) by Yuxun11 (https://sketchfab.com/aimerjk11) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

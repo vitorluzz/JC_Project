@@ -1,0 +1,66 @@
+html{
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.typing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #000;
+}
+
+.terminal {
+  width: 600px;
+  background: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  overflow: hidden;
+}
+
+.terminal-header {
+  background: #2d2d2d;
+  padding: 10px;
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.red { background: #ff5f56; }
+.yellow { background: #ffbd2e; }
+.green { background: #27c93f; }
+
+.terminal-body {
+  padding: 20px;
+  font-family: 'Courier New', monospace;
+  color: #fff;
+  min-height: 200px;
+}
+
+.typing-text {
+  font-size: 18px;
+  line-height: 1.8;
+  margin: 0;
+  white-space: pre-wrap; /* QUEBRA DE LINHA */
+  word-wrap: break-word; /* QUEBRA DE LINHA */
+}
+
+.prompt {
+  color: #4ec9b0;
+  margin-right: 8px;
+}
+
+.cursor {
+  animation: blink 1s infinite;
+  color: #fff;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
