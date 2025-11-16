@@ -2,10 +2,11 @@ import { useTexture } from '@react-three/drei';
 import { useThree } from '@react-three/fiber';
 import * as THREE from 'three';
 import { useEffect } from 'react';
+import ibiraaImage from '/img/ibiraa.png';
 
 export default function CityBackground360() {
   // Carrega a textura 360 - Ibirapuera
-  const texture = useTexture('/img/ibiraa.png');
+  const texture = useTexture(ibiraaImage);
   const { gl } = useThree();
   
   useEffect(() => {
