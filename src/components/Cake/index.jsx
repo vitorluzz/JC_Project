@@ -2,8 +2,10 @@ import { useGLTF } from '@react-three/drei';
 import { useRef, useEffect } from 'react';
 import { useFrame } from '@react-three/fiber';
 
+const modelPath = `${import.meta.env.BASE_URL}objects/strawberry_cake/scene.gltf`;
+
 export default function Cake({ position, animated = false }) {
-  const { scene } = useGLTF('/objects/strawberry_cake/scene.gltf');
+  const { scene } = useGLTF(modelPath);
   const groupRef = useRef();
   const scaleProgress = useRef(0);
 
@@ -30,4 +32,4 @@ export default function Cake({ position, animated = false }) {
   );
 }
 
-useGLTF.preload('/objects/strawberry_cake/scene.gltf');
+useGLTF.preload(modelPath);

@@ -2,8 +2,10 @@ import { useGLTF } from '@react-three/drei';
 import { useRef, useEffect } from 'react';
 import { useFrame } from '@react-three/fiber';
 
+const modelPath = `${import.meta.env.BASE_URL}objects/table/scene.gltf`;
+
 export default function Table({ animated = false }) {
-  const { scene } = useGLTF('/objects/table/scene.gltf');
+  const { scene } = useGLTF(modelPath);
   const groupRef = useRef();
   const opacityProgress = useRef(0);
 
@@ -38,4 +40,4 @@ export default function Table({ animated = false }) {
   );
 }
 
-useGLTF.preload('/objects/table/scene.gltf');
+useGLTF.preload(modelPath);

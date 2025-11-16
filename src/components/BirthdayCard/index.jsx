@@ -2,8 +2,10 @@ import { useState, useMemo, useRef, useEffect } from 'react';
 import { useGLTF, Html } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
 
+const modelPath = `${import.meta.env.BASE_URL}objects/letter/scene.gltf`;
+
 export default function BirthdayCard({ position, animated = false, delay = 0 }) {
-  const { scene } = useGLTF('/objects/letter/scene.gltf');
+  const { scene } = useGLTF(modelPath);
   const [isOpen, setIsOpen] = useState(false);
   const groupRef = useRef();
   const scaleProgress = useRef(0);
@@ -210,4 +212,4 @@ export default function BirthdayCard({ position, animated = false, delay = 0 }) 
   );
 }
 
-useGLTF.preload('/objects/letter/scene.gltf');
+useGLTF.preload(modelPath);

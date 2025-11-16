@@ -3,8 +3,10 @@ import { useLoader, useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 import { useMemo, useEffect, useRef } from 'react';
 
+const modelPath = `${import.meta.env.BASE_URL}objects/photo_frame_low_poly_speed_model/scene.gltf`;
+
 export default function PhotoFrame({ position, rotation, photoTexture, animated = false, delay = 0 }) {
-  const { scene } = useGLTF('/objects/photo_frame_low_poly_speed_model/scene.gltf');
+  const { scene } = useGLTF(modelPath);
   const customTexture = photoTexture ? useLoader(THREE.TextureLoader, photoTexture) : null;
   const groupRef = useRef();
   const scaleProgress = useRef(0);
@@ -74,4 +76,4 @@ export default function PhotoFrame({ position, rotation, photoTexture, animated 
   );
 }
 
-useGLTF.preload('/objects/photo_frame_low_poly_speed_model/scene.gltf');
+useGLTF.preload(modelPath);
