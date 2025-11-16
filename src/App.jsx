@@ -24,7 +24,17 @@ export default function App() {
   };
 
   return (
-    <div style={{ width: '100vw', height: '100vh', background: '#000' }}>
+    <div style={{ 
+      width: '100vw', 
+      height: '100vh', 
+      background: '#000',
+      margin: 0,
+      padding: 0,
+      position: 'fixed',
+      top: 0,
+      left: 0,
+      overflow: 'hidden'
+    }}>
       {/* Canvas 3D em background (invisível durante intro) */}
       {show3D && (
         <div style={{ 
@@ -33,10 +43,19 @@ export default function App() {
           left: 0, 
           width: '100%', 
           height: '100%',
+          margin: 0,
+          padding: 0,
           opacity: scene === '3d' ? 1 : 0,
           transition: 'opacity 1s ease-in-out'
         }}>
-          <Canvas shadows>
+          <Canvas 
+            shadows 
+            style={{ 
+              width: '100%', 
+              height: '100%',
+              display: 'block'
+            }}
+          >
             <Suspense fallback={null}>
               <Scene3D />
             </Suspense>
