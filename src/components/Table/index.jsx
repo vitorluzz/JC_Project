@@ -3,7 +3,7 @@ import { useRef, useEffect } from 'react';
 import { useFrame } from '@react-three/fiber';
 
 export default function Table({ animated = false }) {
-  const { scene } = useGLTF('/src/objects/table/scene.gltf');
+  const { scene } = useGLTF('/objects/table/scene.gltf');
   const groupRef = useRef();
   const opacityProgress = useRef(0);
 
@@ -38,4 +38,4 @@ export default function Table({ animated = false }) {
   );
 }
 
-useGLTF.preload('/src/objects/table/scene.gltf');
+useGLTF.preload('/objects/table/scene.gltf');

@@ -7,10 +7,10 @@ import BirthdayCard from '../BirthdayCard';
 import BirthdayCandle from '../BirthdayCandle';
 import CityBackground360, { CityBackgroundGradient } from '../CityBackground360';
 
-import photo1 from '../../../public/img/photo1.png';
-import photo2 from '../../../public/img/photo2.png';
-import photo3 from '../../../public/img/photo3.png';
-import photo4 from '../../../public/img/photo4.png';
+import photo1 from '/img/photo1.png';
+import photo2 from '/img/photo2.png';
+import photo3 from '/img/photo3.png';
+import photo4 from '/img/photo4.png';
 
 export default function Scene3D() {
   const photo1Url = photo1;

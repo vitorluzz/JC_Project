@@ -4,7 +4,7 @@ import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 
 export default function BirthdayCandle({ position, animated = false }) {
-  const { scene } = useGLTF('/src/objects/birthday_candle/scene.gltf');
+  const { scene } = useGLTF('/objects/birthday_candle/scene.gltf');
   const flameRef = useRef();
   const flame2Ref = useRef();
   const lightRef = useRef();
@@ -149,4 +149,4 @@ export default function BirthdayCandle({ position, animated = false }) {
   );
 }
 
-useGLTF.preload('/src/objects/birthday_candle/scene.gltf');
+useGLTF.preload('/objects/birthday_candle/scene.gltf');

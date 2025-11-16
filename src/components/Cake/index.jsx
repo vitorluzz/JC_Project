@@ -3,7 +3,7 @@ import { useRef, useEffect } from 'react';
 import { useFrame } from '@react-three/fiber';
 
 export default function Cake({ position, animated = false }) {
-  const { scene } = useGLTF('/src/objects/strawberry_cake/scene.gltf');
+  const { scene } = useGLTF('/objects/strawberry_cake/scene.gltf');
   const groupRef = useRef();
   const scaleProgress = useRef(0);
 
@@ -30,4 +30,4 @@ export default function Cake({ position, animated = false }) {
   );
 }
 
-useGLTF.preload('/src/objects/strawberry_cake/scene.gltf');
+useGLTF.preload('/objects/strawberry_cake/scene.gltf');

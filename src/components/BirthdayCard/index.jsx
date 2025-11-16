@@ -3,7 +3,7 @@ import { useGLTF, Html } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
 
 export default function BirthdayCard({ position, animated = false, delay = 0 }) {
-  const { scene } = useGLTF('/src/objects/letter/scene.gltf');
+  const { scene } = useGLTF('/objects/letter/scene.gltf');
   const [isOpen, setIsOpen] = useState(false);
   const groupRef = useRef();
   const scaleProgress = useRef(0);
@@ -210,4 +210,4 @@ export default function BirthdayCard({ position, animated = false, delay = 0 }) 
   );
 }
 
-useGLTF.preload('/src/objects/letter/scene.gltf');
+useGLTF.preload('/objects/letter/scene.gltf');

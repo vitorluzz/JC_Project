@@ -159,8 +159,8 @@ CJProject/
 
 1. **Clone o repositório**
 ```bash
-git clone https://github.com/seu-usuario/jc-project.git
-cd jc-project
+git clone https://github.com/vitorluzz/JC_Project.git
+cd JC_Project
 ```
 
 2. **Instale as dependências**
@@ -182,6 +182,38 @@ http://localhost:5173
 ```bash
 npm run build
 ```
+
+---
+
+## 🌐 Deploy no GitHub Pages
+
+### Deploy Automático (Recomendado)
+
+O projeto está configurado com GitHub Actions para deploy automático. A cada push na branch `main`, o site é automaticamente publicado.
+
+**URL do site:** https://vitorluzz.github.io/JC_Project/
+
+### Deploy Manual
+
+Se preferir fazer deploy manual:
+
+```bash
+npm run deploy
+```
+
+Este comando irá:
+1. Fazer build do projeto (`npm run build`)
+2. Publicar a pasta `dist` no branch `gh-pages`
+
+### Configuração Inicial no GitHub
+
+1. Vá em **Settings** do repositório
+2. Navegue até **Pages** (menu lateral)
+3. Em **Source**, selecione:
+   - **Branch**: `gh-pages` (ou GitHub Actions se usar deploy automático)
+   - **Folder**: `/ (root)`
+4. Clique em **Save**
+5. Aguarde alguns minutos e acesse a URL fornecida
 
 ---
 

@@ -4,7 +4,7 @@ import * as THREE from 'three';
 import { useMemo, useEffect, useRef } from 'react';
 
 export default function PhotoFrame({ position, rotation, photoTexture, animated = false, delay = 0 }) {
-  const { scene } = useGLTF('/src/objects/photo_frame_low_poly_speed_model/scene.gltf');
+  const { scene } = useGLTF('/objects/photo_frame_low_poly_speed_model/scene.gltf');
   const customTexture = photoTexture ? useLoader(THREE.TextureLoader, photoTexture) : null;
   const groupRef = useRef();
   const scaleProgress = useRef(0);
@@ -74,4 +74,4 @@ export default function PhotoFrame({ position, rotation, photoTexture, animated 
   );
 }
 
-useGLTF.preload('/src/objects/photo_frame_low_poly_speed_model/scene.gltf');
+useGLTF.preload('/objects/photo_frame_low_poly_speed_model/scene.gltf');
