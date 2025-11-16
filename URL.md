@@ -8,6 +8,16 @@
 
 ---
 
+## 🔧 ÚLTIMA CORREÇÃO APLICADA:
+
+**Problema**: Arquivos GLTF estavam configurados no Git LFS, mas o LFS não estava ativo, causando erro de "not valid JSON".
+
+**Solução**: Removemos os arquivos `.gltf` do Git LFS e os adicionamos como arquivos normais.
+
+✅ **Status**: Corrigido! O deploy está sendo processado agora.
+
+---
+
 ## ❌ URLs Incorretas (NÃO funcionam):
 
 - ~~https://vitorluzz.github.io/~~ ❌
